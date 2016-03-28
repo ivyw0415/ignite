@@ -1,0 +1,8 @@
+<?php
+	session_start();
+	if(!isset($_SESSION["usr_id"])){
+		header("Location: setup.php");
+	}else{
+		header("Location: main.php");
+	}
+?>

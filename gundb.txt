@@ -1,0 +1,23 @@
+create table users(
+	user_id int(11) not null auto_increment,
+	user_name varchar(20) not null,
+	primary key (user_id),
+	unique key(user_name)
+);
+create table kinds(
+	kind_id int(11) not null auto_increment,
+	kind_name varchar(20) not null,
+	primary key (kind_id),
+	unique key(kind_name)
+);
+create table questions(
+	q_id int(11) not null auto_increment,
+	q_content longtext not null,
+	q_time time not null,
+	user_id int(11) not null,
+	q_vote int(11),
+	kind_id int(11) not null,
+	primary key (q_id),
+	foreign key (user_id) references users (user_id) on delete cascade,
+	foreign key (kind_id) references kinds (kind_id) on delete cascade
+);
