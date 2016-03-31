@@ -25,7 +25,7 @@
 	if (mysqli_query($conn, $insert_name_sql) && $usr_id = mysqli_query($conn, $get_id_sql)) {
     	$row = mysqli_fetch_row($usr_id);
     	//echo $row[0];
-    	header('Location: ../main.php?u_id='.$row[0]);
+    	header('Location: ../index.php?u_id='.$row[0]);
 	} else {
     	echo "Error: " . $insert_name_sql . "<br>" . mysqli_error($conn);
 	}

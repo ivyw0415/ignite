@@ -7,24 +7,31 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    
     <link rel="icon" href="../../favicon.ico">
 
-    <title>GMYG</title>
+    <title>Question Filter</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bootstrap/docs/examples/signin/signin.css" rel="stylesheet">
-	<link href="css/my_css.css" rel="stylesheet">
-	<link rel="prev" title="login" href="setup.php" />
-	<link rel="next" title="guidance" href="ignite.html" />
-	<link rel="stylesheet" type="text/css" href="css/spn.css" />
-	<script type="text/javascript" src="js/spn.js"></script>
+    <link href="css/projector_css.css" rel="stylesheet">
   </head>
-<body>
-<div class="container">
-	<img src="http://demos.jquerymobile.com/1.3.2/_assets/img/jquery-logo.png"/>
-</div>
-</div>
+<body onload="updateContents();">
+<section class="div-container">
+	<div class="div-responses">
+		<div class="div-content">
+			<p class='proj-header'>Responses</p>
+			<p id="allQues"></p>
+		</div>
+	</div>
+	<div class="div-facts">
+		<div class='div-content'>
+			<p class='proj-header'>Facts</p>
+			<p id='facts-content'></p>
+		</div>
+	</div>
+</section>
 </body>
-<script src="guidance_js.js"></script>
+<script src="js/projector_q_js.js"></script>
 </html>

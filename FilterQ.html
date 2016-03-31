@@ -7,25 +7,21 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <!--meta http-equiv="refresh" content="2" />
+    
     <link rel="icon" href="../../favicon.ico">
 
     <title>Question Filter</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="../bootstrap/docs/examples/signin/signin.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
-    
+    <!--link href="css/my_css.css" rel="stylesheet"-->
 </head>
+<style>
+.vote-btn-td{
+	width:10%;
+}
+</style>
 <script>
 	function refresh(q_id){
 		var xhttp;
@@ -35,7 +31,7 @@
 				console.log(xhttp.responseText);
 			}
 		};
-		xhttp.open("POST", "updateQirr.php", true);
+		xhttp.open("POST", "php/updateQirr.php", true);
 		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhttp.send("q_id="+q_id);
 		location.reload();
@@ -49,7 +45,7 @@
 				console.log(xhttp.responseText);
 			}
 		};
-		xhttp.open("POST", "updateQpop.php", true);
+		xhttp.open("POST", "php/updateQpop.php", true);
 		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhttp.send("q_id="+q_id);
 		location.reload();
@@ -63,11 +59,24 @@
 				document.getElementById("allQues").innerHTML = xhttp.responseText;
 			}
 		};
-		xhttp.open("GET", "allQues.php", true);
+		xhttp.open("GET", "php/allQues.php", true);
 		xhttp.send();
-		setTimeout(updateQues, 1000);
+		setTimeout(updateQues, 3000);
 	}
 	
+	function voteQues(q_id,q_vote){
+		var xhttp;
+		xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function(){
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+				console.log(xhttp.responseText);
+			}
+		};
+		xhttp.open("POST", "php/updateQvote_be.php", true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.send("q_id="+q_id+"&q_vote="+q_vote);
+		location.reload();
+	}
 	
 </script>
 <style>
@@ -86,7 +95,7 @@
 
 <body onload="updateQues();">
 <div class="container">
-	<form method="post" action="adminQ.php">
+	<form method="post" action="php/adminQ.php">
 		<h3>Add question</h3><br>
 		<input class="form-control" id="q_input" type="text" name="ques" /><br>
 		<input class="btn btn-lg btn-danger btn-block" type="submit" value="Add Question" name="addQ" />
@@ -96,5 +105,4 @@
 	<p id="allQues"></p>
 </div>
 </body>
-<script src="../bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
 </html>
