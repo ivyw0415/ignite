@@ -1,0 +1,67 @@
+#header {
+  padding-top: 36px;
+  padding-bottom: 50px;
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center; 
+}
+
+#characters {
+  color: white;
+}
+
+#char-left, #char-right {
+  background-image: url(../img/left-char.jpg);
+  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+#char-right {
+  background-image: url(../img/right-char.jpg);
+}
+
+#story, #game {
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+.start-btn {
+  background-color: #EE3E33;
+  color: white;
+  margin-top: 20px;
+}
+
+.carousel-control {
+  background-image: none    !important;
+}
+
+.section {
+  padding: 15px 10px 20px 10px;
+}
+
+.char-info {
+  margin-top: 150px;
+}
+
+.char-info small {
+  color: white;
+}
+
+.red-line {
+  background-color: #EE3E33;
+  height: 3px;
+  margin-bottom: 20px;
+}
+
+.extra-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}

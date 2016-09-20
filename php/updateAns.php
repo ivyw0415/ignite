@@ -1,9 +1,10 @@
 <?php
 
 //test
+	$usr_id = $_SESSION['usr_id'];
 	$servername = "localhost";
-	$username = "root";
-	$password = "ignite";
+	$username = "ignite";
+	$password = "g4c2016etc";
 	$dbname = "ignite";
 	
 	/*$servername = "58.64.190.104";

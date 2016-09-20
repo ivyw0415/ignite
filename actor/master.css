@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#q_block {
+    height: calc(100%);
+    width: calc(100%);
+    font-family: Ariel, Sans-serif;
+}
+.tag {
+    font-weight: bold;
+    color: #f00;
+}

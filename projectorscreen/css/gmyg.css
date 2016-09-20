@@ -1,0 +1,286 @@
+#header {
+  padding-top: 36px;
+  padding-bottom: 50px;
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center; 
+}
+
+#characters {
+  color: white;
+}
+
+#char-left, #char-right {
+  background-image: url(../img/left-char.jpg);
+  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+#char-right {
+  background-image: url(../img/right-char.jpg);
+}
+
+#story, #game {
+  background-color: whitesmoke;
+}
+
+.team {
+  background-color: #FFAFA4;
+}
+
+.hidden {
+  display: none;
+}
+
+.start-btn {
+  background-color: #EE3E33;
+  color: white;
+  margin-top: 20px;
+}
+
+.carousel-control {
+  background-image: none    !important;
+}
+
+.section {
+  padding: 15px 10px 20px 10px;
+}
+
+.char-info {
+  margin-top: 150px;
+}
+
+.char-info small {
+  color: white;
+}
+
+.red-line {
+  background-color: #EE3E33;
+  height: 3px;
+  margin-bottom: 20px;
+}
+
+.extra-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.proj-header {
+  border-bottom: 5px solid #ccc;
+}
+
+.div-ques {
+  border-right: 5px solid #ccc;
+  padding: 0px;
+  height: 88.5%;
+}
+
+.section-header {
+  background-color: #FF6F64;
+  color: white;
+  border-bottom: 3px solid #ccc;
+  text-align: center;
+  font-size: 50px;
+}
+
+.question {
+  padding: 15px 20px 15px 35px;
+  border-bottom: 1px solid #ccc;
+}
+
+.question-content {
+  font-size: 35px;
+}
+
+.vote-num {
+  font-size: 60px;
+}
+
+.author {
+  font-size: 22px;  
+}
+
+.user {
+  color: #EE3E33;
+  font-weight: 900;
+}
+
+.fact-section {
+  padding: 0px;  
+}
+
+.facts {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.unlocked-fact {
+  font-size: 35px;
+  padding: 10px 15px 10px 30px;
+  border: 2px solid #555;  
+  background-color: #eee;
+  height: 41.5%;
+}
+
+.locked-fact {
+  padding: 30px;
+  border: 2px solid #555;  
+  background-color: #888;
+  height: 41.5%;
+}
+
+.locked-fact > .fact {
+  display: none  !important;
+}
+
+.lock {
+  text-align: center;
+  font-size: 200px;
+  color: white;
+  padding-top: 45%;
+}
+
+.unlocked-fact > .lock {
+  display: none   !important;
+}
+
+.unlocked-by {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.align-bot {
+  font-size: 25px;
+  padding-right: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.empty-fact {
+  border-top: 2px solid #555;
+  border-left: 2px solid #555;
+  height: 41.5%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: #ccc;
+  margin: 0px;
+}
+
+html{
+  font-family: Myriad Pro;
+}
+
+.h-web-addr{
+  font-family: 'Inconsolata', serif;
+  font-size: 40px;
+  color: #ee3e33;
+}
+
+.h-counter{
+  color: #666;  
+  font-weight: bold;
+  font-size: 60px;
+}
+.div-facts-content{
+  overflow-y: scroll;
+}
+.p-ques-user{
+  position: relative;
+  width:40%;
+  height: 40px;
+  margin:10px 0px 0px 40px;
+  padding-top: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  padding-left:28px;
+  font-size: 20px;
+  border: solid 2px #ccc;
+  border-bottom: #fff;
+}
+.p-ques{
+  position: relative;
+  width:80%;
+  height: 120px;
+  margin:0px 0px 8px 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  background-color: #fff;
+  border: solid 2px #ccc;
+}
+.p-change{
+  border: solid 2px #ee3e33;
+}
+.p-content{
+  float: left;
+  width: 85%;
+}
+.p-vote{
+  float:left;
+  width: 15%;
+  font-size: 40px;
+}
+.p-achv{
+  position: relative;
+  width:80%;
+  height: 170px;
+  margin:0px 0px 8px 60px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  background-color: #ccc;
+}
+.locked{
+  height:90px;
+}
+.p-achv-user{
+  position: relative;
+  width:40%;
+  height: 40px;
+  margin:10px 0px 0px 60px;
+  padding-top: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ccc;
+  color: #fff;
+  padding-left:28px;
+  font-size: 20px;
+}
+.unlock{
+  background-color:#ee3e33;
+  color:#fff;
+}
+.unlock-content{
+  padding-left:20px;
+  padding-right:20px;
+}
+.locked-logo{
+  width:90px;
+  height:90px;
+  padding-left:45%;
+}
+.p-achv-q{
+  font-size: 20px;
+  border-bottom: solid 2px #ccc;
+  overflow: hidden;
+}
+.p-achv-content{
+  padding-top: 20px;
+}
+.gogogo{
+}

@@ -1,68 +1,108 @@
 body{
-	height:100%;
 }
 h3{
-	position:absolute;
-	top:0;
-	width:100%;
-	text-align: center;
+    position:absolute;
+    top:0;
+    width:100%;
+    text-align: center;
 }
 p{
-	margin-left: 20px;
+    margin-left: 20px;
 }
 header{
-	width: 100%;
-	height: 10%;
-	position: fixed;
-	top:0;
-	z-index: 100;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.header-au{
-	font-size: 20px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 .headers{
-	text-align: center;
-	padding-top: 20px;
+    position: absolute;
+    text-align: center;
 }
 .header-left{
-	float: left;
+    position:relative;
+    float: left;
+    z-index:2;
 }
 .header-right{
-	float: right;
+    position:relative;
+    float: right;
+    z-index:2;
 }
-.header{
-	text-align: center;
-	font-style: bold;
+.header-center{
+    position:absolute;
+    padding-top:0px;
+    z-index:1;
+    padding-left: 30%;
 }
+header{
+    text-align: center;
+    font-style: bold;
+    height:50px;
+    padding:7px 0px 0px 0px;
+    border-bottom: 2px solid #ccc;
+}
+
 .show-ques{
-   	width:100%;
-   	height: 390px;
+    margin-top: 30px;
+    position:fixed;
+    width:100%;
+    height: 80%;
     overflow-y: scroll;
 }
 .f-bottom{
-	position:fixed;
-   	bottom:3%;
-   	width:100%;
-   	height:10%;
+    position: fixed;
+       bottom: 0;
+       width: 100%;
 }
 .container-mine{
-	height:100%;
-	width:100%;
+    position:relative;
+    height:100%;
+    width:100%;
 }
 .v-btn-td{
-	width:15%;
+    width:5%;
+    color: #ee3e33;
+}
+.v-btn-td-c{
+    font-size: 1.2em;
+    font-family: monospace;
 }
 .v-btn-td-h{
-	width:30%;
+    width:30%;
 }
 .content-td{
-	width:70%;
+    width:80%;
+    font-size: 1.2em;
+    word-break: break-word;
 }
-.tr-shown{
-	background-color: #ffb3b3;
+.tr-mine{
+    background-color: #ffb3b3;
 }
 .tr-high-voted{
-	background-color: #b3ffcc;
+    background-color: #b3ffcc;
+}
+.on-screen-res{
+    text-align: left;
+}
+.text-content{
+    margin-top:50px;
+    word-break: break-word;
+}
+.history-content{
+    padding-top:40px;
+}
+.question{
+    word-break: break-word;
+}
+
+.questions-on-pj {
+    background-color: #ffb3b3;
+}
+
+.questions-top {
+    background-color: #ee3e33;
+    color: white;
 }

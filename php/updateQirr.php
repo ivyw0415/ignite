@@ -1,7 +1,8 @@
 <?php
+	$usr_id = $_SESSION['usr_id'];
 	$servername = "localhost";
-	$username = "root";
-	$password = "ignite";
+	$username = "ignite";
+	$password = "g4c2016etc";
 	$dbname = "ignite";
 	
 	/*$servername = "58.64.190.104";
@@ -10,7 +11,6 @@
 	$dbname = "sq_ivyhhhhh";*/
 	
 	$q_id = $_POST['q_id'];
-	$q_vote = $_POST['q_vote'];
 
 // Create connection
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -19,13 +19,14 @@
     	die("Connection failed: " . mysqli_connect_error());
 	}
 	
-	$q_id=(int)$q_id;
 	$query = "update questions set kind_id=2 where q_id=" . $q_id . ";";
-	
-	if (mysqli_query($conn, $query)) {
+	$res = null;
+	if ($res = mysqli_query($conn, $query)) {
 	} else {
-    	echo "Error: " . $query . "<br>" . mysqli_error($conn);
+    	$res = "Error: " . $query . "<br>" . mysqli_error($conn);
 	}
-
+	
+	header('Content-type: application/json');
+	echo json_encode($res);
 	mysqli_close($conn);
 ?>

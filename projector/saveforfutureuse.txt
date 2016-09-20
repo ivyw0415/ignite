@@ -1,0 +1,47 @@
+// <div className='p-ques-user p-change asking'>
+            //     {this.props.name}
+            // </div>
+            // <div className='p-ques p-change asking'>
+            //     <div className='p-content'>
+            //         {this.props.content}  
+            //     </div>
+            //     <div className='p-vote'>
+            //         {this.props.vote}
+            //     </div>
+            // </div>
+
+
+            // <div className='p-ques-user'>
+            //     {this.props.name}
+            // </div>
+            // <div className='p-ques'>
+            //     <div className='p-content'>
+            //         {this.props.content}  
+            //     </div>
+            //     <div className='p-vote'>
+            //         {this.props.vote}
+            //     </div>
+            // </div>
+
+            // <div className='gogogo' id={this.props.f_id}>
+        // <div className='p-achv-user unlock highlighted'>
+        //     From: {this.props.u_name}
+        // </div>
+        // <div className='p-achv unlock highlighted'>
+        // <div className='unlock-content'>
+        //     <div className="p-achv-q">
+        //         {this.props.q_content}
+        //     </div>
+        //     <div className="p-achv-content">
+        //         {this.props.content}
+        //     </div>
+        // </div>
+        // </div>
+        // </div>
+
+
+        // <div className="gogogo" id={this.props.f_id}>
+        // <div className='p-achv locked'>
+        // <div className='locked-logo fa fa-lock fa-3x'></div>
+        // </div>
+        // </div>

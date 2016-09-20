@@ -1,9 +1,10 @@
 <?php
+	$usr_id = $_SESSION['usr_id'];
 	$servername = "localhost";
-	$username = "root";
-	$password = "ignite";
+	$username = "ignite";
+	$password = "g4c2016etc";
 	$dbname = "ignite";
-	
+
 	/*$servername = "58.64.190.104";
 	$username = "sq_ivyhhhhh";
 	$password = "whan1Whan1";
@@ -15,8 +16,8 @@
 	if (!$conn) {
     	die("Connection failed: " . mysqli_connect_error());
 	}
-	
-	$query = "select q_content,q_vote,q_id from questions where kind_id=4 order by q_vote desc";
+
+	$query = "select q_content,q_vote,q_id from questions where kind_id=4 or kind_id=7 order by q_vote desc";
 
 	if ($result = mysqli_query($conn, $query)) {
 	 	print("<table class='table'>");

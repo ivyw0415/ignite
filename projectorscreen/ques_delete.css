@@ -1,0 +1,52 @@
+.removed {
+  -webkit-animation: disappear 1s;
+  -webkit-animation-fill-mode: forwards; 
+  animation: disappear 1s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes disappear{
+  
+  50% {
+    
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  
+  100% {
+    -webkit-transform: translateY(-180px);
+    transform: translateY(-180px); 
+  }    
+}
+
+@keyframes disappear{
+  
+  50% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(-180px);
+    transform: translateY(-180px); 
+  }    
+}
+
+@keyframes border-flashing {
+  0% {border-color: transparent;}
+}
+
+@-webkit-keyframes border-flashing {
+  0% {border-color: transparent;}
+}
+
+.question {
+  margin: 3px;
+  border-collapse: separate;
+}
+
+.asking {
+  border: #ee3e33 solid 3px;
+  animation: border-flashing 0.5s alternate infinite;
+  -webkit-animation: border-flashing 0.5s alternate infinite;
+}
+

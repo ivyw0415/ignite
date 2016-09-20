@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <link rel="icon" href="../../favicon.ico">
 
     <title>Question Filter</title>
@@ -15,23 +15,83 @@
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bootstrap/docs/examples/signin/signin.css" rel="stylesheet">
-    <link href="css/projector_css.css" rel="stylesheet">
+    <!--link href="css/projector_css.css" rel="stylesheet"-->
+    <script src="alert/sweetalert-dev.js"></script>
+  	<link rel="stylesheet" href="alert/sweetalert.css">
   </head>
+  <style>
+.div-ques {
+  float: left;
+  width: 30%;
+  font-size: 25px;
+}
+.div-responses {
+  float: left;
+  width: 45%;
+  font-size: 25px;
+}
+.div-facts {
+  float: left;
+  width: 25%;
+  font-size: 25px;
+}
+.proj-header{
+	font-size:28px;
+	text-align: center;
+}
+.vote-btn-td{
+	width: 3%;
+}
+  </style>
 <body onload="updateContents();">
+<div class='start'>
+	<button class="btn btn-lg btn-danger btn-block">Start!</button>
+</div>
+<div class="ui">
+	<button class="btn btn-lg btn-danger btn-block">Listen!</button>
+	<h1 id="popstatus"><h1>
+</div>
+<div id="selectedQuestion" style="display: inline;">
+</div>
+
+<!--p style="font-size: 50px; padding-top:0px; text-align: center" class="change-color-btn">
+	<a href="#" role="button" id="plus" onclick="bgplus()">+</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#" role="button" id="minus" onclick="bgminus()">-</a>
+</p-->
 <section class="div-container">
-	<div class="div-responses">
+	<div class="div-ques" id="div-ques-id">
+		<form method="post" action="php/adminQ.php">
+			<p class='proj-header'>add ques</p>
+			<input class="form-control" id="q_input" type="text" name="ques" /><br>
+			<input class="btn btn-lg btn-danger btn-block" type="submit" value="Add Question" name="addQ" />
+		</form>
+
+		<h3>Questions</h3>
+		<p id="allQues"></p>
+	</div>
+
+	<div class="div-responses" id="div-resp-id">
 		<div class="div-content">
-			<p class='proj-header'>Responses</p>
-			<p id="allQues"></p>
+			<p class='proj-header'>on proj ques</p>
+			<p id="onprojques"></p>
 		</div>
 	</div>
-	<div class="div-facts">
+	<div class="div-facts" id="div-fact-id">
 		<div class='div-content'>
-			<p class='proj-header'>Facts</p>
+			<p class='proj-header'>Achievements</p>
 			<p id='facts-content'></p>
 		</div>
 	</div>
 </section>
 </body>
 <script src="js/projector_q_js.js"></script>
+<script>
+document.querySelector('div.ui button').onclick = function(){
+	clicked();
+};
+document.querySelector('div.start button').onclick = function(){
+	checkStart();
+};
+</script>
 </html>

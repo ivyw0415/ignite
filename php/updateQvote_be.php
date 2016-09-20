@@ -1,7 +1,8 @@
 <?php
+	$usr_id = $_SESSION['usr_id'];
 	$servername = "localhost";
-	$username = "root";
-	$password = "ignite";
+	$username = "ignite";
+	$password = "g4c2016etc";
 	$dbname = "ignite";
 	
 	/*$servername = "58.64.190.104";
@@ -19,15 +20,13 @@
     	die("Connection failed: " . mysqli_connect_error());
 	}
 	
-	console.log("in");
-	
 	$q_vote = (int)$q_vote+1;
 	$q_id=(int)$q_id;
 	
 	$query = "update questions set q_vote=" . $q_vote ." where q_id=" . $q_id . ";";
 	
-	mysqli_query($conn, $query);
+	$res = mysqli_query($conn, $query);
 		
-
+     echo $res;
 	mysqli_close($conn);
 ?>

@@ -1,0 +1,68 @@
+body{
+	height:100%;
+}
+h3{
+	position:absolute;
+	top:0;
+	width:100%;
+	text-align: center;
+}
+p{
+	margin-left: 20px;
+}
+header{
+	width: 100%;
+	height: 10%;
+	position: fixed;
+	top:0;
+	z-index: 100;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.header-au{
+	font-size: 20px;
+}
+.headers{
+	text-align: center;
+	padding-top: 20px;
+}
+.header-left{
+	float: left;
+}
+.header-right{
+	float: right;
+}
+.header{
+	text-align: center;
+	font-style: bold;
+}
+.show-ques{
+   	width:100%;
+   	height: 390px;
+    overflow-y: scroll;
+}
+.f-bottom{
+	position:fixed;
+   	bottom:3%;
+   	width:100%;
+   	height:10%;
+}
+.container-mine{
+	height:100%;
+	width:100%;
+}
+.v-btn-td{
+	width:15%;
+}
+.v-btn-td-h{
+	width:30%;
+}
+.content-td{
+	width:70%;
+}
+.tr-shown{
+	background-color: #ffb3b3;
+}
+.tr-high-voted{
+	background-color: #b3ffcc;
+}

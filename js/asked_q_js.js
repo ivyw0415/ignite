@@ -6,6 +6,6 @@ function fetchAsked(){
 				document.getElementById("fetchAsked").innerHTML = xhttp.responseText;
 			}
 		};
-		xhttp.open("GET", "php/fetchAsked.php", true);
+		xhttp.open("GET", "../php/fetchAsked.php", true);
 		xhttp.send();
 	}
